@@ -1,0 +1,54 @@
+/* default.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: yellow;
+    color: #333;
+    padding-bottom: 50px; /* Ensure there's enough space at the bottom for the footer */
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    /* Adjust padding-bottom if necessary to ensure space for footer */
+}
+
+.validation-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.validation-buttons button {
+    background-color: #4CAF50; /* Button color */
+    color: white; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
