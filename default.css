@@ -3,14 +3,14 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: yellow;
+    background-color: teal;
     color: #333;
     padding-bottom: 50px; /* Ensure there's enough space at the bottom for the footer */
 }
 
 header {
     background-color: #4CAF50;
-    color: white;
+    color: whitesmoke;
     padding: 10px 0;
     text-align: center;
 }
@@ -26,16 +26,34 @@ h1, h2 {
 }
 
 footer {
-    background-color: #333;
+    background-color: tan;
     color: white;
     text-align: center;
-    padding: 5px 10px;
-    
     bottom: 0;
     width: 100%;
     left: 0;
-    /* Adjust padding-bottom if necessary to ensure space for footer */
+    padding: 20px 0; /* Add padding for better spacing */
 }
+
+footer nav {
+    display: flex; /* Use flexbox to align items in a row */
+    justify-content: center; /* Center the links horizontally */
+    gap: 20px; /* Add space between the links */
+}
+
+footer nav span {
+    display: inline; /* Ensure spans are inline */
+}
+
+footer nav a {
+    color: white; /* Ensure link color is white */
+    text-decoration: none; /* Remove underline from links */
+}
+
+footer nav a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
 
 .validation-buttons {
     margin-top: 20px;
