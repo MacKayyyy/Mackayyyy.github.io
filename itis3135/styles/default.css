@@ -1,33 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: yellow;
-    color: #333; 
+    background-color: #6c969d;
+    color: #2d0320; 
+    min-height: 100vh;  /* Ensures the body takes up the full height of the viewport */
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-    background-color: #4CAF50; 
-    color: white; 
+    background-color: #99d5c9; 
+    color: #2d0320; 
     padding: 10px 0; 
-    text-align: center; 
+    text-align: center;
+    font-family: 'Graduate', sans-serif; /* Apply Google Font to the header */
 }
 
+header nav {
+    display: flex; /* Use flexbox for even spacing */
+    justify-content: center; /* Center the nav items */
+    margin: 10px 0; /* Add vertical margin to separate nav from header content */
+}
+
+header a {
+    color: #2d0320; /* Change link color to white */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: normal; /* Remove bold from links */
+    margin: 0 15px; /* Add horizontal spacing between links */
+    padding: 10px 15px; /* Add padding for button appearance */
+    border: 2px solid #392b58; /* Gold border for button effect */
+    border-radius: 5px; /* Slightly rounded corners */
+    background-color: transparent; /* Make background transparent */
+    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+}
+
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Light background on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+/* Desktop view  */
 main {
     padding: 20px; 
     max-width: 800px; 
     margin: 0 auto; 
+    flex: 1; /* Ensures the main content takes up available space */
+}
+
+/* Tablet view  */
+@media (max-width: 1024px) {
+    main {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    header a {
+        margin: 10px 0;
+    }
+}
+/* Mobile view  */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+        max-width: 95%;
+    }
+
+    header {
+        padding: 5px 0;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    header a {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    footer nav {
+        flex-direction: column;
+    }
+
+    footer .link {
+        margin: 5px 0;
+    }
 }
 
 h1, h2 {
     margin: 0; 
 }
 
-footer {
-    background-color: #333; 
-    color: white; 
-    text-align: center; 
-    padding: 10px 0; 
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+
+/* FOR THE EVALUTIONS PAGE */
+section {
+    margin-bottom: 20px; /* Spacing between sections */
+    padding: 15px;
+    border: 1px solid #140d4f; /* Border around each section */
+    border-radius: 5px;
+    background-color: #d3c2ce; /* White background for sections */
 }
+h3 {
+    margin: 0; /* Remove default margin */
+}
+ul {
+    list-style-type: disc; /* Bullet points for list */
+    padding-left: 20px; /* Indentation for lists */
+}
+.highlight-link {
+    color: #775144; /* Change this color to whatever you want */
+    text-decoration: underline; /* Optional: add underline */
+}
+
+.highlight-link:hover {
+    color: #CF4D6F; /* Change this color for the hover effect */
+    background-color: rgba(255, 255, 255, 0.3); /* Optional: add background effect on hover */
+}
+
+/* FOR THE TABLES PAGE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    border: 1px solid #7D7C7A;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #5B5B5B; /* Darker green for header */
+    color: #F8FCEE;
+}
+tr:nth-child(even) {
+    background-color: #C9C19F; /* Light gray for even rows */
+}
+tr:nth-child(odd) {
+    background-color: #edf7d2; /* White for odd rows */
+}
+tr:last-child {
+    font-weight: bold; /* Bold for the total row */
+}
+
+/* FOR THE FORMS PAGE */
+form {
+    background-color: #d3c2ce;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #140d4f;
+}
+
+input, select, label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle; /* Aligns with text */
+}
+
+/* Group checkboxes and radio buttons in a flex container */
+.checkbox-group, .radio-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.checkbox-group label, .radio-group label {
+    margin-right: 15px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], select {
+    width: calc(100% - 22px); /* Adjust width to prevent overflow */
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #392b58;
+    border-radius: 4px;
+    background-color: #edf7d2;
+    color: #2d0320;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width */
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 5px;
+}
+button {
+    background-color: #392b58;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2d0320;
+}
+
+
+footer {
+    background-color: #59acb1; 
+    color: #2d0320; 
+    text-align: center; 
+    padding: 10px 0; /* Adjust padding for footer */
+    font-family: 'Graduate', sans-serif; /* Apply Google Font to the footer */
+    width: 100%;
+    margin-top: auto; /* Ensures footer stays at the bottom only after content */
+}
+
+footer nav {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center footer links */
+    margin: 10px 0; /* Add vertical margin */
+}
+
+footer .link {
+    color: #2d0320;  /* Set the link color to match the footer */
+    text-decoration: none;  /* Remove underline from links */
+    font-weight: normal;  /* Remove bold from links */
+    margin: 0 15px;  /* Add spacing between links */
+    padding: 10px 15px; /* Add padding for button appearance */
+    border: 2px solid #392b58; /* Green border for footer links */
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+}
+
+footer .link:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Light background on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+/* Styling for the last footer link to remove border */
+footer #design-name {
+    padding: 0; /* Remove padding */
+    margin: 10px; /* Adjust margin to separate from other links */
+    border: none; /* No border */
+    color: #2d0320; /* Keep the same color as footer links */
+    text-decoration: underline; /* Optional: underline for emphasis */
+    font-size: 1rem; /* Adjust font size */
+}
+
