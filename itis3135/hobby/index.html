@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Climbing</title>
+    <link rel="icon" href="images/favicon.png">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* Embedded CSS for the site */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f2ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #0066cc;
+            color: rgb(31, 28, 28);
+            text-align: center;
+            padding: 1rem;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: rgb(59, 40, 40);
+            font-weight: bold;
+        }
+        .section {
+            display: none;
+            padding: 2rem;
+        }
+        .active {
+            display: block;
+        }
+        footer .button {
+            background-color: #333;
+            color: rgb(250, 234, 234);
+            padding: 0.5rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0.5rem;
+        }
+    img {
+        width: 100%; /* Ensures images are responsive and fit their container */
+        max-width: 400px; /* Limits images to a maximum width */
+        height: auto; /* Maintains aspect ratio */
+        display: block; /* Centers images and prevents inline spacing */
+        margin: auto; /* Centers images horizontally */
+    }
+    
+
+    .fade {
+            animation: fade 1.5s ease-in-out;
+        }
+
+        @keyframes fade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .slideshow-container {
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .slides {
+            display: none;
+            width: 100%;
+        }
+        .centered {
+            text-align: center; /* Centers the content */
+        }
+
+        .dot {
+            /* Add any styles you want for the dots */
+            display: inline-block;
+            width: 10px; /* Example size */
+            height: 10px; /* Example size */
+            margin: 5px; /* Space between dots */
+            background-color: gray; /* Example color */
+            border-radius: 50%; /* Make dots circular */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Rock Climbing</h1>
+        <nav>
+            <a href="#" class="nav-link" data-section="home">Home</a> |
+            <a href="#" class="nav-link" data-section="about">About Me</a> |
+            <a href="#" class="nav-link" data-section="schedule">Schedule</a> |
+            <a href="#" class="nav-link" data-section="locations">Best Locations</a> |
+            <a href="#" class="nav-link" data-section="how">How</a> |
+            <a href="#" class="nav-link" data-section="why">Why</a> |
+            <a href="#" class="nav-link" data-section="ai-prompts">AI Prompts</a>
+        </nav>
+
+        <script>
+            // This function will be defined in your external JavaScript file
+        function showSection(section) {
+            // Add your code to show the corresponding section
+            console.log('Showing section:', section);
+        }
+
+        // Add event listeners to the navigation links
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('.nav-link');
+            links.forEach((link) => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent the default anchor behavior
+                    const section = this.getAttribute('data-section'); // Get the section from the data attribute
+                    showSection(section); // Call the showSection function
+                });
+            });
+        });
+
+        </script>
+    </header>
+    
+
+<main>
+    <section id="home" class="section active">
+        <h2>Home</h2>
+        <p><strong>Thing 1:</strong> <em> Paragraph</em></p>
+        <p>Welcome to the world of rock climbing! This site is dedicated to sharing tips, guides, and inspiration for beginners and seasoned climbers alike. Climbing combines physical endurance, mental focus, and a love for nature, making it a unique and rewarding sport.</p>
+        <p><strong>Thing 2:</strong> <em> Figure</em></p>
+        <figure>
+            <img src="images/macMelCamp.jpg" alt="Climbing portrait">
+            <figcaption>Figure 2: mackay and melissa hanging out at the boulders.</figcaption>
+            <p><strong>Thing 3:</strong> <em> Slide Show</em></p>
+        </figure>
+    
+        <div class="slideshow-container">
+            <img class="slides fade" src="images/croatia.jpg"  alt="Rock climbing image 1">
+            <figcaption>Figure 1: Climbing in Croatia.</figcaption>
+
+            <img class="slides fade" src="images/macSummers1.jpg"  alt="Rock climbing image 2">
+            <figcaption>Figure 2: summersville WV deep solo.</figcaption>
+
+            <img class="slides fade" src="images/macColorado3.jpg"  alt="Rock climbing image 3">
+            <figcaption>Figure 3: colorado scramble.</figcaption>
+        </div>
+        
+        <script>
+            let slideIndex = 0;
+            
+        
+            function showSlides() {
+                const slides = document.getElementsByClassName("slides");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+                slides[slideIndex - 1].style.display = "block";  
+                setTimeout(showSlides, 5000); // Change image every 3 seconds
+            }
+            showSlides();
+        </script>
+        
+    </section>
+    
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        
+        <p><strong>Thing 1:</strong> <em>Paragraph</em></p>
+        <p>Hi, I’m a passionate climber who’s been enjoying this sport for several years. As someone deeply involved in STEM and fitness, climbing brings a balanced mix of challenge, adventure, and community for me. Whether at indoor gyms or outdoor locations, I’m always ready for the next climb.</p>
+        
+        <p><strong>Thing 2:</strong> <em>Figure</em></p>
+        <figure>
+            <img src="images/macGrandfather1.jpg" alt="Climbing portrait">
+            <figcaption>Figure 2: At the top of a climb, taking in the view.</figcaption>
+        </figure>
+
+        <p><strong>Thing 3:</strong> <em>Form</em></p>
+        <!-- Contact Form -->
+        <h3>Contact Me</h3>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    
+        <style>
+            /* Additional styles for the contact form */
+            form {
+                margin-top: 1rem;
+                display: flex;
+                flex-direction: column;
+                max-width: 400px;
+            }
+            label {
+                margin: 0.5rem 0 0.2rem;
+            }
+            input, textarea {
+                padding: 0.5rem;
+                font-size: 1rem;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                margin-bottom: 1rem;
+            }
+            button {
+                padding: 0.5rem 1rem;
+                background-color: #0066cc;
+                color: rgb(230, 220, 220);
+                font-size: 1rem;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #00509e;
+            }
+        </style>
+    </section>
+    
+
+    <section id="schedule" class="section">
+        <h2>Schedule</h2>
+        <p><strong>Thing 1:</strong> <em> Paragraph</em></p>
+        <p>Join me during these times for rock climbing sessions!</p>
+        <p><strong>Thing 2:</strong> <em>Figure</em></p>
+        <figure>
+            <img src="images/awiColorado1.jpg" alt="Climbing portrait">
+            <figcaption>Figure 2: Audrey taking in the view.</figcaption>
+        </figure>
+
+        <p><strong>Thing 3:</strong> <em>Table</em></p>
+        <table>
+            <tr><th>Day</th><th>Time</th></tr>
+            <tr><td>Tuesday</td><td>4pm - 6pm</td></tr>
+            <tr><td>Thursday</td><td>4pm - 6pm</td></tr>
+            <tr><td>Saturday</td><td>8am - 10am</td></tr>
+        </table>
+    </section>
+
+    <section id="locations" class="section">
+        <h2>Best Locations</h2>
+        <p><strong>Thing 1:</strong> <em>Paragraph</em></p>
+        <p>Here’s a record of some memorable climbing trips and the dates I visited these locations:</p>
+    
+    <!-- Table of Locations and Visit Dates -->
+    <p><strong>Thing 2:</strong> <em>Table</em></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Location</th>
+                <th>Date Visited</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Morrow Mountain, NC</td>
+                <td>07/15/2020</td>
+            </tr>
+            <tr>
+                <td>Seneca Rocks, WV</td>
+                <td>09/20/2021</td>
+            </tr>
+            <tr>
+                <td>Crowders Mountain, NC</td>
+                <td>05/13/2022</td>
+            </tr>
+            <tr>
+                <td>Summersville Lake, WV</td>
+                <td>08/14/2023</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <style>
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border: 1px solid #ccc;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+
+    <p><strong>Thing 3:</strong> <em>Figure</em></p>
+    <figure>
+        <img src="images/macSummers2.jpg" alt="Climbing portrait">
+        <figcaption>Figure 2: Audrey taking in the view.</figcaption>
+    </figure>
+    </section>
+
+    <section id="how" class="section">
+        <h2>How to Rock Climb</h2>
+        <p><strong>Thing 1:</strong> <em>Paragraph</em></p>
+        <p>Rock climbing involves several techniques and styles. Here are some fundamentals to get started:</p>
+        
+        <p><strong>Thing 2:</strong> <em>Table</em></p>
+        <table>
+            <tr><th>climbing Type</th><th>Description</th></tr>
+            <tr><td>Bouldering</td><td>Climbing short, challenging routes without ropes.</td></tr>
+            <tr><td>Top Rope</td><td>Climbing with a rope secured at the top of the route for safety.</td></tr>
+            <tr><td>Lead</td><td>Attaching the rope as you ascend, requiring skill and focus.</td></tr>
+        </table>
+
+        <p><strong>Thing 3:</strong> <em>Figure</em></p>
+        <figure>
+            <img src="images/handGrips.png" alt="Hand position for climbing">
+            <figcaption>Figure 4: Proper hand position for gripping the rock.</figcaption>
+        </figure>
+    </section>
+
+    <section id="why" class="section">
+        <h2>Why Rock Climb?</h2>
+        <p><strong>Thing 1:</strong> <em>Paragraph</em></p>
+        <p>Rock climbing is more than just a sport; it’s a community and a lifestyle that offers numerous benefits:
+            <ul>
+                <li><strong>Inclusive Community: </strong>Climbing brings together people from all backgrounds, especially those in STEM fields.</li>
+                <li><strong>Physical Exercise:</strong> Great for improving balance, upper body, and core strength.</li>
+                <li><strong>Mental Focus:</strong> Climbing requires strategic thinking and problem-solving, making it engaging and fulfilling.</li>
+            </ul>
+        </p>
+        
+        <p><strong>Thing 2:</strong> <em>Slide Show</em></p>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="images/macColorado1.jpg"  alt="Rock climbing image 1">
+                <figcaption>Figure 1: Water break with Audrey</figcaption>
+            </div>
+            <div class="slide fade">
+                <img src="images/macColorado2.jpg"  alt="Rock climbing image 2">
+                <figcaption>Figure 2: summersville WV deep solo.</figcaption>
+            </div>
+            <div class="slide fade">
+                <img src="images/macColorado4.jpg"  alt="Rock climbing image 3">
+                <figcaption>Figure 3: colorado scramble.</figcaption>
+            </div>
+        </div>
+    
+        <!-- Slideshow Navigation Dots -->
+        <div class="centered">
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+        </div>
+    
+        <!-- Slideshow Script -->
+        <script>
+            let slideIndex2 = 1;
+            
+    
+            function showSlide(n) {
+                let i;
+                let slides = document.getElementsByClassName("slide");
+                let dots = document.getElementsByClassName("dot");
+    
+                if (n > slides.length) {
+                    slideIndex2 = 1;
+                }
+                if (n < 1) {
+                    slideIndex2 = slides.length;
+                }
+                
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex2-1].style.display = "block";  
+                dots[slideIndex2-1].className += " active";
+            }
+            showSlide(slideIndex2);
+
+            function plusSlides(n) {
+                showSlide(slideIndex2 += n);
+            }
+    
+            // Optional: Add automatic slide rotation every 3 seconds
+            setInterval(() => { 
+                plusSlides(1); 
+            }, 5000);
+        </script>
+
+        <p><strong>Thing 3:</strong> <em>Figure</em></p>
+        <figure>
+            <img src="images/awiGreenway.jpg" alt="Climbing community image">
+            <figcaption>Figure 5: Audrey taking a break.</figcaption>
+        </figure>
+    </section>
+
+    <section id="ai-prompts" class="section">
+        <h2>AI Prompts</h2>
+        <p>Below are the AI prompts used to create content and images for this site:</p>
+        <pre>
+            i want my html page to have a slide show in it with
+            3 photos that just rotate between each photo. can 
+            you write the code for this.
+
+
+            can you rewrite the index page and make the hobby 
+            rock climbing. fill out the details sections with
+            locations of seneca rocks west virginia, summersville
+            west virginia, morrow mountain nc, and crowders 
+            mountain NC. fill out the schedule section with 
+            tuesday (4pm-6pm), Thursday (4pm-6pm), Saturday 
+            (8am-10am). fill out the how section with information
+            about how to rock climb. leave some area for figures
+            and diagrams that can show how illustrations of hand 
+            position and different climbing types (bouldering, 
+            top rope, lead climbing). for the Why section fill it
+            out and say how its an inclusive community, it brings 
+            together STEM major type of people, its good exercise 
+            and great for balance and upperbody strength.  for the
+            AI Prompts section, copy paste this prompt into that 
+            section along with the previous prompt I wrote.
+
+
+            would it be possible to add in the "home" section a 
+            slide show of pictures I have from rock climbing? 
+            could you write the code to set that up for me and I 
+            will insert the images.
+
+
+            thank you. now on the about me section, can you add a
+            way to contact me through a submission form. i want it 
+            to ask for the users name and a description of what 
+            they what to say to me with a submit button next to it
+
+
+            thanks. now for the "schedule" section can you add a 
+            table that shows all of the locations in one column 
+            and all the dates visited in a column beside that. 
+            The locations are Seneca rocks WV (09/20/2021), 
+            Summersville Lake (08/14/2023), crowders mountain 
+            (05/13/2022), and morrow mountain (07/15/2020) and can
+            you put the locations in order by date in the table.
+
+</pre>
+    </section>
+</main>
+
+<footer>
+    <p>Designed by <a href="/mburke24/itis3135/burkesblueprints.co/index.html" class="button">Burke Designs</a></p>
+</footer>
+
+<script>
+    function showSection(sectionId) {
+        document.querySelectorAll('.section').forEach((section) => section.classList.remove('active'));
+        document.getElementById(sectionId).classList.add('active');
+    }
+</script>
+
+</body>
+</html>

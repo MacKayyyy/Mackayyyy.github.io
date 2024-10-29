@@ -1,0 +1,43 @@
+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap-image/1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap-image/1.1 
+        http://www.sitemaps.org/schemas/sitemap-image/1.1/sitemap-image.xsd">
+
+    <url>
+        <loc>https://webpages.charlotte.edu/mburke24/itis3135/project/index.html</loc>
+        <lastmod>2023-10-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <url>
+        <loc>https://webpages.charlotte.edu/mburke24/itis3135/project/gallery.html</loc>
+        <lastmod>2023-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://webpages.charlotte.edu/mburke24/itis3135/project/projects.html</loc>
+        <lastmod>2023-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://webpages.charlotte.edu/mburke24/itis3135/project/events.html</loc>
+        <lastmod>2023-10-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://webpages.charlotte.edu/mburke24/itis3135/project/contact.html</loc>
+        <lastmod>2023-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+</urlset>
