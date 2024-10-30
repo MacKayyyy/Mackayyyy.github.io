@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Scripts</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="scripts/defaultscripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>First Scripts</h2>
+        <p class="tagline">Experience fun interactions with the Mundane Boar!</p>
+        <h3 id="date-time"></h3> <!-- Display date/time here -->
+
+        <!-- Form for user input -->
+        <form id="user-form">
+            <label for="user-name">Your Name:</label>
+            <input type="text" id="user-name" required><br>
+
+            <label for="user-mood">How are you feeling?</label>
+            <input type="text" id="user-mood" required><br>
+
+            <label for="favorite-number">Your Favorite Number (0-10):</label>
+            <input type="number" id="favorite-number" min="0" max="10"><br>
+
+            <button type="button" id="submit-for-greeting-button">Submit</button>
+
+        </form>
+
+        <h3 id="greeting"></h3> <!-- Display greeting here -->
+
+        <!-- Function Buttons -->
+        <div>
+            <button id="script-test-button">Boar food</button>
+            <button id="animal-fact-button">Boar Facts</button>
+            <button id="random-animal-sound-button">What a boar sound like?</button>
+            <button id="generate-animal-joke-button">Boar Joke</button>
+        </div>
+        
+        
+        <div id="output" class="output-display"></div>
+        <div>
+            <p>
+
+            </p>
+        </div>
+        <div>
+            <label for="human-age">Enter your age in human years:</label>
+            <input type="number" id="human-age" min="1">
+            <button id="boar-years-button">Transform to Boar</button>
+        </div>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script> 
+</body>
+</html>
