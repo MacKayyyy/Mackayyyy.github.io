@@ -255,3 +255,63 @@ footer #design-name {
     font-size: 1rem; /* Adjust font size */
 }
 
+/* Basic CSS for the slideshow layout */
+
+#header, #footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+#slideshow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.slide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#thumbnail-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    width: 60px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.thumbnail:hover {
+    opacity: 0.7;
+}
+
+.center-image {
+    display: block;
+    margin: 20px auto; /* Centers horizontally with some top/bottom margin */
+    max-width: 100%; /* Ensures responsiveness */
+    height: auto;
+}
+.center-text {
+    text-align: center; /* Centers the text horizontally */
+}

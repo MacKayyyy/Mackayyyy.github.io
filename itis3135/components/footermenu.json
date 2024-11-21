@@ -1,0 +1,62 @@
+{
+    "footer": {
+        "usefulLinks": {
+           
+            "links": [
+                {
+                    "name": "CLT-Web",
+                    "url": "https://webpages.charlotte.edu/mburke24/",
+                    "target": "_blank"
+                },
+                {
+                    "name": "github.io",
+                    "url": "https://github.com/MacKayyyy/Mackayyyy.githib.io",
+                    "target": "_blank"
+                },
+                {
+                    "name": "github",
+                    "url": "https://github.com/MacKayyyy/Mackayyyy.github.io/tree/main/itis3135",
+                    "target": "_blank"
+                },
+                {
+                    "name": "ITIS3135",
+                    "url": "https://webpages.charlotte.edu/mburke24/itis3135/",
+                    "target": "_blank"
+                },
+                {
+                    "name": "linkedin",
+                    "url": "https://www.linkedin.com/in/mackay-burke",
+                    "target": "_blank"
+                },
+                {
+                    "name": "Codecademy",
+                    "url": "https://www.codecademy.com/profiles/MacKayBurke",
+                    "target": "_blank"
+                },
+                {
+                    "name": "freeCodeCamp",
+                    "url": "https://www.freecodecamp.org/MACKAY_BURKE",
+                    "target": "_blank"
+                }
+            ]
+        },
+        "footerLinks": [
+            {
+                "name": "Burke's Blueprints ©2024",
+                "url": "https://webpages.charlotte.edu/mburke24/itis3135/burkesblueprints.co/index.html",
+                "id": "design-name"
+            },
+            {
+                "name": "Certified in Responsive Web Design",
+                "url": "https://freecodecamp.org/certification/MACKAY_BURKE/responsive-web-design",
+                "id": "certification"
+            },
+            {
+                "name": "Certified in JS",
+                "url": "https://www.freecodecamp.org/certification/MACKAY_BURKE/javascript-algorithms-and-data-structures-v8",
+                "id": "java-certification"
+            }
+        ]
+    }
+}
+

@@ -1,0 +1,40 @@
+{
+    "menus": [
+        {
+            
+            "links": [
+                {"name": "Home", "url": "https://webpages.charlotte.edu/mburke24/itis3135/index.html"},
+                {"name": "Who made this?", "url": "https://webpages.charlotte.edu/mburke24/itis3135/introduction.html"},
+                {"name": "Contract", "url": "https://webpages.charlotte.edu/mburke24/itis3135/contract.html"},
+                {"name": "About", "url": "https://webpages.charlotte.edu/mburke24/itis3135/about.html"},
+                {"name": "Evaluations", "url": "https://webpages.charlotte.edu/mburke24/itis3135/website_evaluations.html"},
+                {"name": "Tables", "url": "https://webpages.charlotte.edu/mburke24/itis3135/tables.html"},
+                {"name": "Forms", "url": "https://webpages.charlotte.edu/mburke24/itis3135/forms.html"},
+                {"name": "Midterm", "url": "https://webpages.charlotte.edu/mburke24/itis3135/hobby/index.html"}
+            ]
+        },
+        {
+        
+            "links": [
+                {"name": "First Scripts", "url": "https://webpages.charlotte.edu/mburke24/itis3135/first-scripts.html"},
+                {"name": "B.Y.O. Intro", "url": "https://webpages.charlotte.edu/mburke24/itis3135/byo_intro.html"},
+                {"name": "Interactive Drawing", "url": "https://webpages.charlotte.edu/mburke24/itis3135/drawing.html"},
+                {"name": "Project Overview", "url": "https://webpages.charlotte.edu/mburke24/itis3135/project_overview.html"},
+                {"name": "Client Project", "url": "https://webpages.charlotte.edu/mburke24/itis3135/project/index.html"}
+            ]
+        },
+        {
+        
+            "links": [
+                {"name": "Slideshow", "url": "https://webpages.charlotte.edu/mburke24/itis3135/slideshow.html"}
+            ]
+        },
+        {
+        
+            "links": [
+                {"name": "CRAPPY", "url": "https://webpages.charlotte.edu/mburke24/itis3135/stuff/cRApPy WEB pageS.htm"},
+                {"name": "Hobby", "url": "https://webpages.charlotte.edu/mburke24/itis3135/hobby/index.html"}
+            ]
+        }
+    ]
+}
